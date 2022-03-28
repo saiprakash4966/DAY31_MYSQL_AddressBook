@@ -60,3 +60,30 @@ mysql> desc addressbook;
 | Email       | varchar(50) | NO   |     | NULL    |                |
 +-------------+-------------+------+-----+---------+----------------+
 9 rows in set (0.02 sec)
+
+mysql> insert into addressbook (FirstName, LastName, Address, City, State, ZipCode, PhoneNumber, Email) values ('Saiprakash', 'Beemari', 'Ramnagar', 'Karimnagar', 'Telangana', '505001', '9676113169', 'saiprakashbeemari@gmail.com');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from addressbook;
++----+------------+----------+----------+------------+-----------+---------+-------------+-----------------------------+
+| id | FirstName  | LastName | Address  | City       | State     | ZipCode | PhoneNumber | Email                       |
++----+------------+----------+----------+------------+-----------+---------+-------------+-----------------------------+
+|  1 | Saiprakash | Beemari  | Ramnagar | Karimnagar | Telangana | 505001  | 9676113169  | saiprakashbeemari@gmail.com |
++----+------------+----------+----------+------------+-----------+---------+-------------+-----------------------------+
+1 row in set (0.00 sec)
+
+mysql>  insert into addressbook (FirstName, LastName, Address, City, State, ZipCode, PhoneNumber, Email) values ('Manojkumar', 'Gadham', 'Bhagatnagar', 'Kattarampur', 'Telangana', '505002', '9110987654', 'manojkumargadham@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  insert into addressbook (FirstName, LastName, Address, City, State, ZipCode, PhoneNumber, Email) values ('Saiprakash', 'LMDcolony', 'Kothagattu', 'Huzurabad', 'Telangana', '505003', '9112345689', 'chandrareddy@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from addressbook;
++----+------------+-----------+-------------+-------------+-----------+---------+-------------+-----------------------------+
+| id | FirstName  | LastName  | Address     | City        | State     | ZipCode | PhoneNumber | Email                       |
++----+------------+-----------+-------------+-------------+-----------+---------+-------------+-----------------------------+
+|  1 | Saiprakash | Beemari   | Ramnagar    | Karimnagar  | Telangana | 505001  | 9676113169  | saiprakashbeemari@gmail.com |
+|  2 | Manojkumar | Gadham    | Bhagatnagar | Kattarampur | Telangana | 505002  | 9110987654  | manojkumargadham@gmail.com  |
+|  3 | Saiprakash | LMDcolony | Kothagattu  | Huzurabad   | Telangana | 505003  | 9112345689  | chandrareddy@gmail.com      |
++----+------------+-----------+-------------+-------------+-----------+---------+-------------+-----------------------------+
+3 rows in set (0.00 sec)
