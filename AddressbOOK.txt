@@ -40,3 +40,23 @@ mysql> show databases;
 | sys                |
 +--------------------+
 7 rows in set (0.00 sec)
+mysql> use addressbookservice;
+Database changed
+mysql> create table addressbook (id int not null auto_increment, FirstName varchar(50) not null, LastName varchar(62) not null, Address varchar(50) not null, City varchar(63) not null, State varchar(70) not null, ZipCode varchar(20) not null, PhoneNumber varchar(30) not null, Email varchar(50) not null, Primary Key(id));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc addressbook;
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| id          | int         | NO   | PRI | NULL    | auto_increment |
+| FirstName   | varchar(50) | NO   |     | NULL    |                |
+| LastName    | varchar(62) | NO   |     | NULL    |                |
+| Address     | varchar(50) | NO   |     | NULL    |                |
+| City        | varchar(63) | NO   |     | NULL    |                |
+| State       | varchar(70) | NO   |     | NULL    |                |
+| ZipCode     | varchar(20) | NO   |     | NULL    |                |
+| PhoneNumber | varchar(30) | NO   |     | NULL    |                |
+| Email       | varchar(50) | NO   |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
+9 rows in set (0.02 sec)
